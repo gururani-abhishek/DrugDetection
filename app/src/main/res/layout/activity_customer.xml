@@ -31,21 +31,21 @@
         app:layout_constraintTop_toBottomOf="@+id/prompt"
         android:text="(Unique ID is the 12 digit code on the back panel)"
         />
-    
+
     <EditText
         android:id="@+id/uniqueId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/promptDesc"
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="UADC1234GHIC"
-        />
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promptDesc" />
 
     <Button
         android:id="@+id/okBtn"
