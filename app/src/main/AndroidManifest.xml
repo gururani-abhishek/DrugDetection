@@ -13,6 +13,22 @@
         android:theme="@style/Theme.App.Starting"
         tools:targetApi="31">
         <activity
+            android:name=".FakeMedicine"
+            android:exported="false"
+            android:theme="@style/Theme.DrugDetection">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CertifiedMedicine"
+            android:exported="false"
+            android:theme="@style/Theme.DrugDetection">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AdminActivity"
             android:exported="false"
             android:theme="@style/Theme.DrugDetection">
