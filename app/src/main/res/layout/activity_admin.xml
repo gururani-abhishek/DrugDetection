@@ -18,6 +18,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:gravity="clip_vertical"
         />
+
     <EditText
         android:id="@+id/adminId"
         android:layout_width="match_parent"
@@ -42,6 +43,18 @@
         android:layout_margin="20dp"
         android:autofillHints="password"/>
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:layout_marginTop="48dp"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@id/adminPass" />
+
     <Button
         android:id="@+id/loginBtn"
         android:text="login"
@@ -51,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@id/adminPass"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="200dp"
+        android:layout_marginStart="200dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

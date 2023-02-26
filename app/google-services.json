@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "42665515075",
+    "project_id": "drugdetection-1707a",
+    "storage_bucket": "drugdetection-1707a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42665515075:android:25fa5870f84d7ab23d9cf6",
+        "android_client_info": {
+          "package_name": "com.example.drugdetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42665515075-hmmj9q0ifrr5dirr3ctes642jkklm14v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArHiKk0bK6soZZi_xz3VwfPE9J7ivw73o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42665515075-hmmj9q0ifrr5dirr3ctes642jkklm14v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
