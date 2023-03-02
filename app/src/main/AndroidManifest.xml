@@ -13,15 +13,22 @@
         android:theme="@style/Theme.App.Starting"
         tools:targetApi="31">
         <activity
-            android:name=".AdminCertifiedMed"
+            android:name=".AddStationActivity"
             android:exported="false"
             android:theme="@style/Theme.DrugDetection"
             />
         <activity
+            android:name=".PreviousStationsPresentationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DrugDetection" />
+        <activity
+            android:name=".AdminCertifiedMed"
+            android:exported="false"
+            android:theme="@style/Theme.DrugDetection" />
+        <activity
             android:name=".AdminMedCheck"
             android:exported="false"
-            android:theme="@style/Theme.DrugDetection"
-            />
+            android:theme="@style/Theme.DrugDetection" />
         <activity
             android:name=".FakeMedicine"
             android:exported="false"

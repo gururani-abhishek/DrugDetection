@@ -2,17 +2,14 @@ package com.example.drugdetection
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.example.drugdetection.R
 
-class AdminCertifiedMed : AppCompatActivity() {
+class AddStationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_admin_certified_med)
+        setContentView(R.layout.activity_add_station)
 
-        val intent = intent
         val uniqueId = intent.getStringExtra("UNIQUE_ID")
-
-//        Toast.makeText(this, "UNIQUE_ID = $uniqueId", Toast.LENGTH_LONG).show()
 
     }
 }
