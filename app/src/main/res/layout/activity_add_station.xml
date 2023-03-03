@@ -46,10 +46,12 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
+                    android:id="@+id/et_id"
+                    android:padding="10dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:hint="enter station ID here"
-                    android:textSize="25sp"
+                    android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView"
@@ -85,10 +87,12 @@
                     />
 
                 <EditText
+                    android:id="@+id/et_name"
+                    android:padding="10dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:hint="enter station Name here"
-                    android:textSize="25sp"
+                    android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -102,6 +106,7 @@
 
 
     <Button
+        android:id="@+id/btn_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
