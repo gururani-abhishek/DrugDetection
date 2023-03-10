@@ -1,20 +1,18 @@
 package com.example.drugdetection
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-class CustomerActivity : AppCompatActivity() {
+class AdminMedCheck : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_customer)
+        setContentView(R.layout.activity_admin_med_check)
 
         // when the ok button is clicked, that unique ID is checked in the db.
         val okBtn = findViewById<Button>(R.id.okBtn)
@@ -32,7 +30,7 @@ class CustomerActivity : AppCompatActivity() {
                     .get()
                     .addOnSuccessListener { document ->
                         if(document.exists()) {
-                            val certifiedMedIntent = Intent(this, CertifiedMedicine::class.java)
+                            val certifiedMedIntent = Intent(this, AdminCertifiedMed::class.java)
                             // using putExtra method I'm putting a key-value pair
                             // that is for the [uniqueId], and I'm then passing it to the
                             // CertifiedMedicine activity
@@ -50,8 +48,8 @@ class CustomerActivity : AppCompatActivity() {
                         Toast.makeText(this, "db access error", Toast.LENGTH_LONG).show()
                     }
 
-                    
-                }
+
+            }
 
         }
     }
